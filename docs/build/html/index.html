@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<html lang="as">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to ci&#39;s documentation! &#8212; asd asd documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-ci-s-documentation">
+<h1>Welcome to ci's documentation!<a class="headerlink" href="#welcome-to-ci-s-documentation" title="Permalink to this heading">¶</a></h1>
+<p>You can write some Info about your project here!</p>
+</section>
+<section id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this heading">¶</a></h1>
+<p>using a toctree you can make a table of contents</p>
+</section>
+<section id="module-brewing.cooking">
+<span id="cooking"></span><h1>cooking<a class="headerlink" href="#module-brewing.cooking" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="brewing.cooking.simmer">
+<span class="sig-prename descclassname"><span class="pre">brewing.cooking.</span></span><span class="sig-name descname"><span class="pre">simmer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">potion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#brewing.cooking.simmer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cooks the potion.</p>
+<p>Updates simmer_duration and cooked attributes in the class instance.</p>
+<dl class="simple">
+<dt>potion<span class="classifier">Potion instance</span></dt><dd><p>The potion to be cooked.</p>
+</dd>
+<dt>duration<span class="classifier">int</span></dt><dd><p>How long to cook the potion for [hours].</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="brewing.cooking.stir">
+<span class="sig-prename descclassname"><span class="pre">brewing.cooking.</span></span><span class="sig-name descname"><span class="pre">stir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">potion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#brewing.cooking.stir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stirs the potion.</p>
+<p>Updates colour in the class instance.</p>
+<dl class="simple">
+<dt>potion<span class="classifier">Potion instance</span></dt><dd><p>The potion to be stirred.</p>
+</dd>
+<dt>direction<span class="classifier">{'clockwise', 'anti-clockwise'} str</span></dt><dd><p>The direction in which the potions is to be stirred</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="potion-class">
+<h1>potion_class<a class="headerlink" href="#potion-class" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="brewing.potion_class.Potion">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">brewing.potion_class.</span></span><span class="sig-name descname"><span class="pre">Potion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">student_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#brewing.potion_class.Potion" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="brewing.potion_class.Potion.add_ingredients">
+<span class="sig-name descname"><span class="pre">add_ingredients</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ingredients</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#brewing.potion_class.Potion.add_ingredients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add ingredients to the potion.</p>
+<p>Updates ingredients and colour attributes in the class instance.</p>
+<dl class="simple">
+<dt>ingredients<span class="classifier">array_like, optional</span></dt><dd><p>A list of ingredients (str) to add to the potion.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="brewing.potion_class.Potion.setup">
+<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heat_source</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#brewing.potion_class.Potion.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a container and/or heat_source to the potion.</p>
+<p>Updates container and heat_source attributes in the class instance.</p>
+<dl class="simple">
+<dt>container<span class="classifier">str, optional</span></dt><dd><p>The name of the container to brew the potion in.</p>
+</dd>
+<dt>heat_source<span class="classifier">str, optional</span></dt><dd><p>The name of the heat source used to cook the potions</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-brewing.brew_potions">
+<span id="brew-potions"></span><h1>brew_potions<a class="headerlink" href="#module-brewing.brew_potions" title="Permalink to this heading">¶</a></h1>
+<p>This is a module level docstring</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="brewing.brew_potions.make_example_potion">
+<span class="sig-prename descclassname"><span class="pre">brewing.brew_potions.</span></span><span class="sig-name descname"><span class="pre">make_example_potion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">student_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ASPP</span> <span class="pre">student'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#brewing.brew_potions.make_example_potion" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function makes an example potion.</p>
+<dl class="simple">
+<dt>student_name<span class="classifier">str, optional</span></dt><dd><p>by default &quot;ASPP student&quot;</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>potion</dt><dd><p>example potion</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="brewing.brew_potions.make_python_expert_potion">
+<span class="sig-prename descclassname"><span class="pre">brewing.brew_potions.</span></span><span class="sig-name descname"><span class="pre">make_python_expert_potion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">student_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#brewing.brew_potions.make_python_expert_potion" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function makes a python expert potion.</p>
+<p>student_name : str, optional</p>
+<dl class="simple">
+<dt>potion</dt><dd><p>example potion</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="how-to-contribute">
+<h1>How to Contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this heading">¶</a></h1>
+<p>The files
+- containers.py
+- ingredients.py
+- inspection.py
+still need to be documented!</p>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">asd</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, asd.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
