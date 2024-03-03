@@ -15,8 +15,9 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run:
-        python -m pip install pytest numpy
+        python -m pip install pytest
+        python install .
     - name: Test with pytest
       run:
-        pytest -sv test_brewing
+        pytest -sv test_brewing/
 
